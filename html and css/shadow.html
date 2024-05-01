@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASSIGNMENT DAY 7</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      /* Add CSS styles here */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      /* Navigation */
+      .navbar {
+        background-color: #333;
+        overflow: hidden;
+        padding: 1rem;
+      }
+
+      .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        border-radius: 50px;
+      }
+
+      .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      /* Header */
+      .header {
+        background-image: url("https://source.unsplash.com/random");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(159, 139, 139);
+        text-align: center;
+        font-style: italic;
+      }
+
+      /* Services */
+      .services {
+        padding: 4rem;
+        text-align: center;
+        border-radius: 30px;
+        background-color: #ddd;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      .services h2 {
+        margin-bottom: 3rem;
+      }
+
+      .service-box {
+        background-color: #f2f2f2;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      /* About */
+      .about {
+        background-color: #ddd;
+        padding: 4rem;
+        color: rgb(29, 20, 20);
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        padding-top: 1%;
+        padding-bottom: 40px;
+        border-radius: 40px;
+        border: transparent;
+      }
+      .about p {
+        background-color: rgb(252, 247, 247);
+        padding: 50px;
+        font-size: large;
+        font-weight: 400;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align:justify;
+      }
+
+      .about h2 {
+        margin-bottom: 3rem;
+      }
+
+      /* Contact */
+      .contact {
+        padding: 4rem;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-color: antiquewhite;
+        border-radius: 40px;
+        border: transparent;
+      }
+      .contact h2 {
+        margin-bottom: 3rem;
+      }
+      .contact h2:hover {
+        border-bottom: 2px solid transparent;
+        font-weight: bold;
+        background-color: rgb(81, 117, 142);
+        color: aliceblue;
+        border-radius: 50px;
+      }
+
+      .contact-form {
+        /* display: flex; */
+        display: grid;
+        /* display:inline; */
+        justify-content: center;
+        align-items: center;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        padding: 1rem;
+        margin-bottom: 2rem;
+        width: 100%;
+      }
+
+      .contact-form button {
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+        border: none;
+      }
+
+      .contact-form button:hover {
+        background-color: #332424;
+      }
+      .icon {
+        height: 50px;
+        width: 200px;
+        position: relative;
+        bottom: 20px;
+        right: 10px;
+        background-color: white;
+        border: 2px solid transparent; /* below three line are used to make the icons evenly spaced and in between the box */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-inline: 1300px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="">Home</a> <a href="">Services</a> <a href="">About</a>
+      <a href="">Contact</a>
+    </nav>
+    <header class="header">
+      <h1>Welcome to my Website From AMRITANSHU</h1>
+    </header>
+    <section class="services">
+      <h2>Our Services</h2>
+      <div class="service-box">
+        <h3>
+          JAVASCRIPT
+          <hr />
+        </h3>
+        <p>
+          JavaScript is the most powerful and versatile programming language
+          used in the web. It is a lightweight, cross-platform, single-threaded
+          and interpreted programming language. It is a commonly used
+          programming language to create dynamic and interactive elements in web
+          applications. It is easy to learn, compiled language.
+        </p>
+      </div>
+      <div class="service-box">
+        <h3>
+          CSS TUTORIAL
+          <hr />
+        </h3>
+        <p>
+          CSS (Cascading Styling Sheet) is the language that defines the
+          presentation of a document written in a markup language like HTML. CSS
+          is the language that transforms a basic HTML structure into a
+          user-friendly and visually beautiful webpage. It can change the font,
+          color, size, and spacing of content, split it into multiple columns,
+          or add animations and other features.
+        </p>
+      </div>
+      <div class="service-box">
+        <h3>
+          HTML TUTORIAL
+          <hr />
+        </h3>
+        <p>
+          HTML is the language of the web, used by billions of websites to
+          create the pages you see every day. Want to learn HTML from scratch
+          and make your web pages? This tutorial is for you!
+        </p>
+      </div>
+    </section>
+    <section class="about">
+      <h2>About Us</h2>
+      <p>
+        Name: Amritanshu Kumar <br>
+        Passion: I’m passionate about technology,
+        problem-solving, and creating innovative solutions.<br> Education: I
+        completed my BTech from JECRC with a strong academic
+        record. <br>Skills: I’ve honed my skills in programming
+        languages like Java, HTML, and SQL. <br>Projects: Currently, I’m working on
+        an app that simplifies student grade access and another app that enables
+        anonymous voice and video communication.
+      </p>
+    </section>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <textarea
+          name="message"
+          id="message"
+          cols="100"
+          rows="5"
+          placeholder="Message"
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <div class="icon">
+      <a href="https://www.youtube.com/"
+        ><i class="fa-brands fa-youtube fa-xl" style="color: #f31212"></i
+      ></a>
+      <a href="https://www.whatsapp.com/"
+        ><i class="fa-brands fa-whatsapp fa-xl" style="color: #12d99d"></i
+      ></a>
+      <a href="https://www.instagram.com/"
+        ><i class="fa-brands fa-instagram fa-xl" style="color: #c62465"></i
+      ></a>
+      <a href="https://twitter.com/?lang=en"
+        ><i class="fa-brands fa-x-twitter fa-xl" style="color: #161718"></i
+      ></a>
+    </div>
+  </body>
+</html>
+ASSIGN QUES 1 - amritanshu thakur.html
+Displaying ASSIGN QUES 1 - amritanshu thakur.html.
