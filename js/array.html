@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [34, 45, 'a', true, null]
+        // for (const i in a) {
+        //     document.write(i,'<br>')
+        // }
+        // for (const i of a) {
+        //     document.write(i,' ')
+        // }
+        let p = (v, i, arr) => {
+            document.write(v, ' ', i, ' ', arr, '<br>')
+        }
+        a.forEach(p)
+        let b = [[1, 2, 3],
+        [4, 5, 6],
+        [7, 8, 9]]
+        document.write('<table border="1">')
+        b.forEach((v, i) => {
+            document.write('<tr>')
+            v.forEach((val, i) => {
+                document.write('<td>')
+                document.write(val)
+                document.write('<td>')
+            })
+            document.write('</tr>')
+        })
+        document.write('</table>')
+
+    </script>
+</body>
+
+</html>

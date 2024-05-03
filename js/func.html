@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let add=(a,b)=>a+b
+        let sum=(a,b,c)=>{//arrow function
+            let d=a+b+c
+            return d
+        }
+        function simpleInterest(p,t,r){//function declaration
+            let si=(p*t*r)/100
+            return si
+        }
+        let a=simpleInterest(100,2,10)
+        console.log(a)
+        let multiply=function(a,b){//function expression
+            return a*b
+        }
+        console.log(multiply(45,3))
+    </script>
+</body>
+</html>
