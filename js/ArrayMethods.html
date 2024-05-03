@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=[4,6,7,8,12]
+       let y= a.filter((v,i,arr)=>{
+            return v>6
+        })
+        console.log(y)
+        console.log(a)
+        // console.log(a[2])
+        // console.log(a.length)
+        // console.log(a.at(3))
+        // a.pop()//delete last element
+        // a.push(67)//add element at last
+        // a.shift()//remove first elm
+        // a.unshift(34)
+        // let b=a.concat([4,67])
+        
+        // console.log(b.includes(8))
+        // console.log(a.join(','))
+        // console.log(a.indexOf(8))
+        a.reverse()
+        console.log(a)
+        
+        // console.log(a.slice(1))
+        // a.splice(1,0,23,67)
+        // let c=a.map((v,i,arr)=>{
+        //     return v*2
+        // })
+        let c=a.every((v,i,arr)=>v>7)
+        let d=a.some((v,i,arr)=>v>11)
+       console.log(a.find((v,i)=>v<7))
+       let x=a.reduce((acc,v,i,arr)=>{
+        //v=12,acc=0 =>acc=12
+        //v=8,acc=12=>20
+        //v=7,acc=20=>27
+        //6,27=>33
+        //4,33=>37
+        return acc+=v
+       },0)
+       console.log(x)
+        console.log(d)
+        console.log(c)
+       let z= a.find((v,i,arr)=>v>7 && v<11)
+       console.log(z)
+        
+    </script>
+</body>
+</html>

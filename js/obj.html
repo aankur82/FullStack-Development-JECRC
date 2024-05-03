@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj={
+            name:'sunil kumar',
+           age:19,
+            // isMale:true,
+           // contactInfo:{mob:233434},
+            marks:[23,34,45,67],
+            // totalMarks:function(){
+            //     return this.marks.reduce((acc,v,i,arr)=>acc+v,0)
+            // }
+        }
+
+        // let keys=['name','age']
+        // console.log(obj.name)
+        // console.log(obj[keys[1]])
+        // console.log(obj.totalMarks())
+        // console.log(obj['totalMarks']())
+      for(let pair of Object.entries(obj)){
+        console.log(pair[0],pair[1])
+      }
+       
+    </script>
+</body>
+</html>
