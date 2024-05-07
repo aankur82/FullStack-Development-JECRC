@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onclick="change()" onmouseenter="" onmouseleave="">click</button>
+<p id="para">hello</p>
+<p id="a" class="b">paragraph</p>
+<h3 onclick="changeText()" class="b">heading</h3>
+<body>
+    <script>
+       var para= document.getElementById('a')
+    //    console.log(para.innerText)
+    //    console.log(para.textContent)
+        var para1=document.getElementById('para')
+       function change() {
+        para1.innerHTML='bye'       
+       }
+       function changeText() {
+        para.innerHTML='hello'
+       para.innerHTML=`<b>hello</b>`
+       }
+       
+       console.log(para)
+        let a=[45,34,5,7]
+        a.sort((a,b)=>b-a)
+        console.log(a)
+    </script>
+</body>
+</html>
