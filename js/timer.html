@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="stopInterval()">stop interval</button>
+
+    <script>
+        let n=1
+        function printNumber(){
+            console.log(n)
+            n++
+        }        
+    //    let a= setInterval(printNumber,1000);
+       function stopInterval() {
+        // clearInterval(a)
+        clearTimeout(b)
+       }
+       let b=setTimeout(printNumber,3000)
+
+    </script>
+</body>
+</html>

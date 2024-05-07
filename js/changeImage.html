@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="changeImage1()">car</button>
+    <button onclick="changeImage2()">bike</button>
+    <button onclick="changeImage3()">cat</button>
+    <br>
+    <img src="car.jpg" alt="">
+    <script>
+        let image = document.querySelector('img')
+        function changeImage1(params) {
+            image.setAttribute('src','car.jpg')
+        }
+        function changeImage2(params) {
+            image.setAttribute('src','bike.jpg')
+
+        }
+        function changeImage3(params) {
+            image.setAttribute('src','cat.jpg')
+
+        }
+    </script>
+</body>
+
+</html>

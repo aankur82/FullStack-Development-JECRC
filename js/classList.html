@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{width: 100px;height: 100px;border: 1px solid;}
+        .d{background-color: red;}
+        .c{font-size: 50px;}
+        .b{color: white;display: none;}
+
+    </style>
+</head>
+<body>
+    <button ondblclick="changeImage()" onclick="toggleClass()">hide or show</button>
+    <!-- <div class="a b c">a</div> -->
+    <img src="https://picsum.photos/200/300" alt="">
+    <script>
+        let box=document.querySelector('.a')
+        let btn=document.querySelector('button')
+        let image=document.querySelector('img')
+            console.log(image.getAttribute('src'))
+            function changeImage(){
+                
+                image.setAttribute('src','./arrow.png')
+            }
+        function toggleClass() {
+        // box.classList.toggle('b')
+        // btn.innerText= box.classList.contains('b')?'show':'hide';
+            
+        // if (box.classList.contains('b')) {
+        //     btn.innerText='show'
+        // } else {
+        //     btn.innerText='hide'
+            
+        // }           
+        }
+        // box.classList.add('d')
+        // box.classList.remove('c')
+        // box.classList.toggle('b')
+        // console.log(box.classList.contains('r'))
+
+        // console.log()
+    </script>
+</body>
+</html>
