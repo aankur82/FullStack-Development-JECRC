@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emp{
+            static componey='xyz'
+            constructor(name,contact,depart){
+                this.name=name
+                this.contact=contact
+                this.depart=depart
+            }
+            set salary(s){
+                this._salary=s
+            }
+            get salary(){
+                return this._salary
+            }
+
+            static displayComp(){
+                console.log(this.componey)
+            }
+            show(){
+                console.log(`employee name is ${this.name}
+                contact no is -${this.contact}
+                and department is-${this.depart}`)
+            }
+        }
+        class Clerk extends Emp{
+            constructor(name,contact,depart,id){
+                super(name,contact,depart)
+                this.id=id
+            }
+            showId(){
+                console.log(`id is ${this.id}`)
+            }
+        }
+        let pankaj=new Clerk('pankaj',34,'it',1)
+        pankaj.show()
+        // let sunil=new Emp('sunil',2323,'CSE')
+        // sunil.salary=2300
+        // console.log(sunil.salary)
+        // sunil.show()
+        // console.log(Emp.componey)
+        // Emp.displayComp()
+
+    </script>
+</body>
+</html>
